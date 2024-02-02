@@ -1,0 +1,15 @@
+
+FROM python:3.9
+WORKDIR /app
+COPY . /app
+RUN pip install -r requirements.txt
+
+CMD ["python", "dtl_nyc_data.py"]
+
+
+
+
+# docker build -t my_python_app .
+# docker run -it my_python_app
+# docker run -d my_python_app
+
